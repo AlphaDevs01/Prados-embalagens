@@ -25,7 +25,12 @@ router.get('/', async (req, res) => {
 });
 
 // Create category (protected)
-router.post('/', authenticateToken, async (req, res) => {
+router.post('/', async (req, res) => {
+  console.log('Categoria recebida:', req.body); // Adicione este log para depuração
+  const { nome } = req.body;
+  if (!nome) {
+    return res.status(400).json({ error: 'Nome é obrigatório' });
+  }
   try {
     const { nome, descricao } = req.body;
     const result = await pool.query(

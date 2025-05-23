@@ -27,4 +27,5 @@ app.use('/api/categories', categoryRoutes);
 //   console.log(`Servidor rodando na porta ${PORT}`);
 // });
 
+// Só exporte o app, não chame app.listen em ambiente serverless
 export default app;
