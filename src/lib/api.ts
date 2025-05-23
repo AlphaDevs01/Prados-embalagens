@@ -1,4 +1,4 @@
-const API_URL = '/api';
+const API_URL = 'https://prados-embalagens.vercel.app/api';
 
 export const api = {
   auth: {
