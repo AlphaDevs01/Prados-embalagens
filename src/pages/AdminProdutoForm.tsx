@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { useProdutosStore } from '../../store/produtosStore';
-import { useCategoriasStore } from '../../store/categoriasStore';
+import { useProdutosStore } from '../store/produtosStore';
+import { useCategoriasStore } from '../store/categoriasStore';
 import { ArrowLeft, Upload } from 'lucide-react';
 
 const AdminProdutoForm = () => {

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { useCategoriasStore } from "../../store/categoriasStore";
-import { useProdutosStore } from "../../store/produtosStore";
+import { useCategoriasStore } from "../store/categoriasStore";
+import { useProdutosStore } from "../store/produtosStore";
 import { Plus, Edit2, Trash2 } from "lucide-react";
 
 const AdminCategoriasPage = () => {

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useProdutosStore } from '../../store/produtosStore';
+import { useProdutosStore } from '../store/produtosStore';
 import { Plus, Edit2, Trash2, Search } from 'lucide-react';
 
 const AdminProdutosPage = () => {

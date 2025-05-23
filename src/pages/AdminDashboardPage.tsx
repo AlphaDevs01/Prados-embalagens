@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Package2, ListPlus, FolderPlus } from 'lucide-react';
-import { useProdutosStore } from '../../store/produtosStore';
-import { useCategoriasStore } from '../../store/categoriasStore';
+import { useProdutosStore } from '../store/produtosStore';
+import { useCategoriasStore } from '../store/categoriasStore';
 
 const AdminDashboardPage = () => {
   const navigate = useNavigate();
