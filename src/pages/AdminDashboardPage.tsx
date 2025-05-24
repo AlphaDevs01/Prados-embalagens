@@ -22,12 +22,12 @@ const AdminDashboardPage = () => {
   }, [produtos]);
 
   return (
-    <div className="p-6">
-      <h1 className="text-2xl font-bold text-secondary-800 mb-6">
+    <div className="p-2 sm:p-4 md:p-6">
+      <h1 className="text-xl sm:text-2xl font-bold text-secondary-800 mb-4 sm:mb-6">
         Dashboard Administrativo
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-6 md:mb-8">
         <div className="bg-white p-6 rounded-lg shadow-sm">
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-lg font-semibold text-secondary-700">Total de Produtos</h2>
@@ -72,12 +72,12 @@ const AdminDashboardPage = () => {
         </div>
       </div>
 
-      <div className="bg-white p-6 rounded-lg shadow-sm">
-        <h2 className="text-xl font-semibold text-secondary-800 mb-4">
+      <div className="bg-white p-3 sm:p-6 rounded-lg shadow-sm">
+        <h2 className="text-lg sm:text-xl font-semibold text-secondary-800 mb-3 sm:mb-4">
           Produtos Recentes
         </h2>
         <div className="overflow-x-auto">
-          <table className="w-full">
+          <table className="w-full min-w-[400px]">
             <thead>
               <tr className="border-b border-gray-200">
                 <th className="text-left py-3 px-4 text-secondary-600">Nome</th>

@@ -74,22 +74,22 @@ const AdminProdutoForm = () => {
   };
 
   return (
-    <div className="p-6">
-      <div className="flex items-center mb-6">
+    <div className="p-2 sm:p-4 md:p-6">
+      <div className="flex items-center mb-4 sm:mb-6">
         <button
           onClick={() => navigate('/admin/produtos')}
-          className="text-secondary-600 hover:text-secondary-800 mr-4"
+          className="text-secondary-600 hover:text-secondary-800 mr-2 sm:mr-4"
         >
           <ArrowLeft size={24} />
         </button>
-        <h1 className="text-2xl font-bold text-secondary-800">
+        <h1 className="text-xl sm:text-2xl font-bold text-secondary-800">
           {id ? 'Editar Produto' : 'Novo Produto'}
         </h1>
       </div>
 
-      <div className="bg-white rounded-lg shadow-sm p-6">
+      <div className="bg-white rounded-lg shadow-sm p-3 sm:p-6">
         <form onSubmit={handleSubmit} className="space-y-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
             <div>
               <label htmlFor="nome" className="block text-sm font-medium text-secondary-700 mb-1">
                 Nome do Produto *
